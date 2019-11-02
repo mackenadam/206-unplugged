@@ -12,6 +12,7 @@
    ========================================================================== */
 
 html {
+  width: 100%;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -112,18 +113,50 @@ header, footer {
   flex-flow: column nowrap;
 }
 
+footer {
+  text-align: center;
+}
+
+header .content-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
 .branding {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 nav {
+  width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 15px;
+}
+
+nav ul li a {
+  margin: auto;
 }
 
 .header-divider {
@@ -144,32 +177,48 @@ nav {
   justify-content: center;
 }
 
+.home-headline h1 {
+  width: 90%;
+}
+
 .newsletter-signup, .general-information, .previous-retreats {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.info-section {
+  width: 60%;
+  text-align: center;
 }
 
 /* ----- FAQ Page Styles ----- */
 
 .faqs {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+.faqs h2 {
+  text-align: left;
 }
 
 /* ----- About Page Styles ----- */
 
 .mission-statement, .contact {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin: auto;
 }
 
 
