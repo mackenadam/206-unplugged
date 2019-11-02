@@ -105,6 +105,10 @@ body {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 header, footer {
   width: 100%;
   display: flex;
@@ -192,6 +196,7 @@ nav ul li a {
 
 .info-section {
   width: 60%;
+  margin: 1em 0;
   text-align: center;
 }
 
@@ -220,6 +225,12 @@ nav ul li a {
   flex-flow: row wrap;
   margin: auto;
 }
+
+.mission-statement p {
+  margin: 1em 0;
+}
+
+
 
 
 
