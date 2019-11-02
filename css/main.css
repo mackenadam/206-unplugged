@@ -98,6 +98,82 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ----- Global Styles ----- */
+
+body {
+  width: 100%;
+}
+
+header, footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.branding {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid grey;
+}
+
+/* ----- Homepage Styles ----- */
+
+.home-headline {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.newsletter-signup, .general-information, .previous-retreats {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+/* ----- FAQ Page Styles ----- */
+
+.faqs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+/* ----- About Page Styles ----- */
+
+.mission-statement, .contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -263,4 +339,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
