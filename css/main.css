@@ -172,6 +172,8 @@ nav ul li a {
   border-bottom: 1px solid grey;
 }
 
+
+
 /* ----- Homepage Styles ----- */
 
 .home-headline {
@@ -323,8 +325,124 @@ nav ul li a {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* ------- TABLET STYLES ------- */
+@media only screen and (min-width: 768px) {
+  /* ----- Global Styles ----- */
+  header, main, footer {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  header .content-wrapper {
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  .branding, nav {
+    width: 40%;
+  }
+
+  .branding {
+    justify-content: flex-start;
+  }
+
+  .branding a {
+    padding-left: 13%;
+  }
+
+  nav, nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .footer-address, .social {
+    width: 45%;
+  }
+
+  /* ----- Homepage Styles ----- */
+  .newsletter-signup {
+    justify-content: space-between;
+  }
+
+  .newsletter-headline, .newsletter-forms {
+    width: 300px;
+  }
+
+  .general-information {
+    justify-content: space-around;
+  }
+
+  .info-section {
+    width: 200px;
+    padding: 25px;
+  }
+
+  .previous-retreats {
+    justify-content: space-between;
+  }
+
+  .previous-retreats h2 {
+    width: 100%;
+  }
+
+  .retreats-section {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header, main, footer {
+    max-width: 1200px;
+  }
+
+  .newsletter-headline, .newsletter-forms {
+    width: 320px;
+  }
+
+  .general-information {
+
+  }
+
+  .general-information h2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .info-section {
+    width: 25%;
+  }
+
+  .previous-retreats br {
+    display: none;
+  }
+
+  .retreats-section {
+    width: 400px;
+  }
+
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
 }
 
 @media print,
