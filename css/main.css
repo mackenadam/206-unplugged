@@ -366,7 +366,7 @@ nav ul li a {
   .footer-content {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
     flex-flow: row wrap;
   }
 
@@ -403,6 +403,40 @@ nav ul li a {
   .retreats-section {
     width: 320px;
   }
+
+  /* ----- FAQ Page Styles ----- */
+
+  .faqs {
+    justify-content: space-between;
+  }
+
+  .faqs h2 {
+    width: 100%;
+  }
+
+  .faq-section {
+    width: 45%;
+    height: 200px;
+  }
+
+  /* ----- About Styles ----- */
+
+  .mission-statement, .contact {
+    justify-content: space-between;
+  }
+
+  .mission-statement h2, .contact h2 {
+    width: 100%;
+  }
+
+  .mission-statement p {
+    width: 45%;
+  }
+
+  .contact-section {
+    width: 45%;
+    height: 200px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -412,10 +446,6 @@ nav ul li a {
 
   .newsletter-headline, .newsletter-forms {
     width: 320px;
-  }
-
-  .general-information {
-
   }
 
   .general-information h2 {
@@ -441,6 +471,7 @@ nav ul li a {
 
   .footer-content {
     width: 100%;
+    justify-content: space-around;
   }
 
 }
