@@ -14,7 +14,7 @@
 html {
   width: 100%;
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -103,10 +103,61 @@ textarea {
 
 body {
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+
+}
+
+a {
+  color: #e2e3ed;
+  font-size: 1.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
 }
 
 p {
   margin: 0;
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+
 }
 
 header, footer {
@@ -185,6 +236,10 @@ nav ul li a {
 
 .home-headline h1 {
   width: 90%;
+}
+
+.home-headline h1 br {
+  display: none;
 }
 
 .newsletter-signup, .general-information, .previous-retreats {
@@ -328,6 +383,23 @@ nav ul li a {
 /* ------- TABLET STYLES ------- */
 @media only screen and (min-width: 768px) {
   /* ----- Global Styles ----- */
+
+  a {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, h4 {
+    font-size: 1.5em;
+  }
+
   header, main, footer {
     max-width: 768px;
     margin: 0 auto;
@@ -375,6 +447,10 @@ nav ul li a {
   }
 
   /* ----- Homepage Styles ----- */
+  .home-headline h1 br {
+    display: block;
+  }
+
   .newsletter-signup {
     justify-content: space-between;
   }
@@ -440,8 +516,29 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 1200px) {
+  /* ----- Global Styles ----- */
+  a {
+    font-size: 1.125em;
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3, h4 {
+    font-size: 1.875em;
+  }
+
   header, main, footer {
     max-width: 1200px;
+  }
+
+  p {
+    font-size: 1.125em;
   }
 
   .newsletter-headline, .newsletter-forms {
