@@ -105,11 +105,7 @@ body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-}
-
-ul,
-ol {
-
+  color: #e2e3ed;
 }
 
 a {
@@ -125,16 +121,20 @@ a:hover {
 
 h1 {
   font-size: 2.25em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
 }
 
@@ -144,20 +144,8 @@ p {
   line-height: 1.125em;
 }
 
-img {
-
-}
-
-figure {
-
-}
-
 address {
   font-style: normal;
-}
-
-.content-wrapper {
-
 }
 
 header, footer {
@@ -166,6 +154,7 @@ header, footer {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
+  background-color: #202322;
 }
 
 footer {
@@ -186,6 +175,7 @@ header .content-wrapper {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 10px 0;
 }
 
 nav {
@@ -194,6 +184,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: auto;
+  padding: 10px 0;
 }
 
 nav ul {
@@ -223,19 +214,29 @@ nav ul li a {
   border-bottom: 1px solid grey;
 }
 
+.footer-address, .social {
+  padding: 25px 0;
+}
+
+.copyright {
+  padding: 10px 0;
+}
 
 
 /* ----- Homepage Styles ----- */
 
 .home-headline {
   width: 100%;
+  height: 600px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background: no-repeat center url("../img/header.png");
 }
 
 .home-headline h1 {
   width: 90%;
+  padding-top: 5%;
 }
 
 .home-headline h1 br {
@@ -248,7 +249,37 @@ nav ul li a {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  margin: auto;
+  margin: 0;
+  padding: 10% 5%;
+}
+
+.newsletter-signup {
+  background-color: #527158;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.general-information {
+  background: center no-repeat url("../img/amenities.png") #000000;
 }
 
 .info-section {
@@ -257,6 +288,13 @@ nav ul li a {
   text-align: center;
 }
 
+.previous-retreats {
+  background-color: #2a423a;
+}
+
+.retreats-section img {
+  width: 100%;
+}
 /* ----- FAQ Page Styles ----- */
 
 .faqs {
@@ -451,7 +489,12 @@ nav ul li a {
     display: block;
   }
 
+  .newsletter-signup, .general-information, .previous-retreats {
+    padding: 5%;
+  }
+
   .newsletter-signup {
+    align-items: flex-start;
     justify-content: space-between;
   }
 
