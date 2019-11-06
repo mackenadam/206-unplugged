@@ -232,6 +232,7 @@ nav ul li a {
   align-items: flex-start;
   justify-content: center;
   background: no-repeat center url("../img/header.png");
+  background-size: cover;
 }
 
 .home-headline h1 {
@@ -280,6 +281,7 @@ input[type=button] {
 
 .general-information {
   background: center no-repeat url("../img/amenities.png") #000000;
+  background-size: cover;
 }
 
 .info-section {
@@ -335,7 +337,20 @@ input[type=button] {
   margin: 1em 0;
 }
 
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
 
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
