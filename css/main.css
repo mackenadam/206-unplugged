@@ -519,6 +519,10 @@ input[type=button] {
     padding-left: 13%;
   }
 
+  nav {
+    padding-right: 75px;
+  }
+
   nav, nav ul {
     display: flex;
     align-items: center;
@@ -549,7 +553,7 @@ input[type=button] {
 
   .newsletter-signup {
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .newsletter-headline, .newsletter-forms {
@@ -566,7 +570,7 @@ input[type=button] {
   }
 
   .previous-retreats {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .previous-retreats h2 {
@@ -623,7 +627,7 @@ input[type=button] {
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 3em;
   }
 
   h3, h4 {
@@ -632,6 +636,10 @@ input[type=button] {
 
   p {
     font-size: 1.125em;
+  }
+
+  .home-headline {
+    height: 750px;
   }
 
   .newsletter-headline, .newsletter-forms {
@@ -661,7 +669,10 @@ input[type=button] {
 
   .footer-content {
     width: 100%;
-    justify-content: space-around;
+  }
+
+  nav {
+    padding-right: 100px;
   }
 
 }
