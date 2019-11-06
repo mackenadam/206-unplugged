@@ -303,7 +303,9 @@ input[type=button] {
   align-items: center;
   justify-content: flex-start;
   flex-flow: row wrap;
-  margin: auto;
+  margin: 0;
+  padding: 10% 5%;
+  background-color: #527158;
 }
 
 .faqs h2 {
@@ -318,7 +320,15 @@ input[type=button] {
   align-items: center;
   justify-content: flex-start;
   flex-flow: row wrap;
-  margin: auto;
+  padding: 10% 5%;
+}
+
+.mission-statement {
+  background-color: #527158;
+}
+
+.contact {
+  background-color: #2a423a;
 }
 
 .mission-statement p {
@@ -439,7 +449,6 @@ input[type=button] {
   }
 
   header, main, footer {
-    max-width: 768px;
     margin: 0 auto;
   }
 
@@ -574,10 +583,6 @@ input[type=button] {
 
   h3, h4 {
     font-size: 1.875em;
-  }
-
-  header, main, footer {
-    max-width: 1200px;
   }
 
   p {
